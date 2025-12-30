@@ -218,10 +218,10 @@ const HeroSection = () => {
       </div>
       {/* Footer Ticker */}
       <div className="relative z-10 border-t border-secondary/10 bg-background/80 backdrop-blur-sm">
-        <div className="overflow-hidden whitespace-nowrap flex mt-8 p-0">
-          <div className="animate-marquee flex gap-12 items-center font-paragraph text-sm text-secondary/60">
+        <div className="overflow-hidden whitespace-nowrap flex mt-16 p-0">
+          <div className="animate-marquee flex gap-12 items-center font-paragraph text-sm text-secondary">
             {SERVICES.map((s, i) => (
-              <React.Fragment key={i} className="pt-8 pr-0 pb-[19px] pl-0">
+              <React.Fragment key={i}>
                 <span className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-primary rounded-full"></span>
                   {s.title.toUpperCase()}
