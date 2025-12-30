@@ -221,7 +221,7 @@ const HeroSection = () => {
 
       {/* Footer Ticker */}
       <div className="relative z-10 border-t border-secondary/10 bg-background/80 backdrop-blur-sm">
-        <div className="overflow-hidden py-4 whitespace-nowrap flex">
+        <div className="overflow-hidden py-8 whitespace-nowrap flex mt-8">
           <div className="animate-marquee flex gap-12 items-center font-paragraph text-sm text-secondary/60">
             {SERVICES.map((s, i) => (
               <React.Fragment key={i}>
