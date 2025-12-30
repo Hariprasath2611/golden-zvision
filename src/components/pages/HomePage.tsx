@@ -248,96 +248,6 @@ const HeroSection = () => {
   );
 };
 
-const ServiceMatrix = () => {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
-  return (
-    <section className="w-full bg-secondary text-secondary-foreground py-32 relative overflow-hidden">
-      {/* Background Grid */}
-      <div className="absolute inset-0 opacity-10 pointer-events-none" 
-           style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
-      </div>
-
-      <div className="max-w-[120rem] mx-auto px-6 relative z-10">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-24 border-b border-white/20 pb-8">
-          <AnimatedElement>
-            <h2 className="font-heading text-5xl md:text-7xl font-bold tracking-tight">
-              SYSTEM<br/>CAPABILITIES
-            </h2>
-          </AnimatedElement>
-          <AnimatedElement delay={200} className="mt-8 md:mt-0">
-            <div className="font-paragraph text-sm text-primary text-right">
-              [ AVAILABLE MODULES: {SERVICES.length} ]<br/>
-              STATUS: ACTIVE
-            </div>
-          </AnimatedElement>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/20 border border-white/20">
-          {SERVICES.map((service, index) => (
-            <Link 
-              key={service.id} 
-              to="/store"
-              className="group relative bg-secondary p-12 h-[400px] flex flex-col justify-between overflow-hidden transition-all duration-500 hover:bg-secondary/90"
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
-            >
-              {/* Hover Effect Background */}
-              <div className={cn(
-                "absolute inset-0 bg-primary transition-transform duration-500 ease-in-out origin-bottom-left z-0",
-                hoveredIndex === index ? "scale-100" : "scale-0"
-              )} />
-
-              {/* Content */}
-              <div className="relative z-10 flex justify-between items-start">
-                <span className="font-paragraph text-xs opacity-50 group-hover:text-white group-hover:opacity-100 transition-colors">
-                  0{index + 1}
-                </span>
-                <service.icon className="w-10 h-10 text-primary group-hover:text-white transition-colors" />
-              </div>
-
-              <div className="relative z-10">
-                <h3 className="font-heading text-2xl font-bold mb-4 group-hover:text-white transition-colors">
-                  {service.title}
-                </h3>
-                <p className="font-paragraph text-sm text-gray-400 group-hover:text-white/90 transition-colors mb-6">
-                  {service.desc}
-                </p>
-                <div className="flex gap-2 flex-wrap">
-                  {service.tags.map(tag => (
-                    <span key={tag} className="text-[10px] font-paragraph border border-white/20 px-2 py-1 rounded-full group-hover:border-white/50 group-hover:text-white transition-colors">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              {/* Corner Accent */}
-              <div className="absolute top-0 right-0 w-0 h-0 border-t-[40px] border-r-[40px] border-t-transparent border-r-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            </Link>
-          ))}
-
-          {/* CTA Cell */}
-          <Link to="/store" className="group relative bg-white p-12 h-[400px] flex flex-col justify-center items-center text-center overflow-hidden">
-            <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/diagmonds-light.png')] opacity-50"></div>
-            <div className="relative z-10">
-              <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                <ArrowRight className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="font-heading text-2xl font-bold text-secondary mb-2">
-                View Full Catalog
-              </h3>
-              <p className="font-paragraph text-sm text-secondary/60">
-                Explore all {SERVICES.length} services
-              </p>
-            </div>
-          </Link>
-        </div>
-      </div>
-    </section>
-  );
-};
-
 const StickyFeatures = () => {
   return (
     <section className="w-full bg-background py-32 relative">
@@ -475,7 +385,6 @@ export default function HomePage() {
       `}</style>
 
       <HeroSection />
-      <ServiceMatrix />
       <StickyFeatures />
       <StatsBanner />
     </div>
