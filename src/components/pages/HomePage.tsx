@@ -167,7 +167,6 @@ const HeroSection = () => {
           <div className="absolute top-[15%] right-[35%] w-12 h-4 bg-primary/60 animate-pulse transform rotate-0" />
         </div>
       </div>
-
       {/* Header Content */}
       <header className="relative z-20 w-full max-w-[120rem] mx-auto px-6 py-8 flex justify-between items-center">
         <div className="font-paragraph font-bold text-xl tracking-tighter">
@@ -182,7 +181,6 @@ const HeroSection = () => {
           Log In
         </Link>
       </header>
-
       {/* Main Hero Content */}
       <div className="relative z-10 flex-grow flex items-center px-6">
         <div className="w-full max-w-[120rem] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
@@ -218,13 +216,12 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-
       {/* Footer Ticker */}
       <div className="relative z-10 border-t border-secondary/10 bg-background/80 backdrop-blur-sm">
-        <div className="overflow-hidden py-8 whitespace-nowrap flex mt-8">
+        <div className="overflow-hidden whitespace-nowrap flex mt-8 p-0">
           <div className="animate-marquee flex gap-12 items-center font-paragraph text-sm text-secondary/60">
             {SERVICES.map((s, i) => (
-              <React.Fragment key={i}>
+              <React.Fragment key={i} className="pt-8 pr-0 pb-[19px] pl-0">
                 <span className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-primary rounded-full"></span>
                   {s.title.toUpperCase()}
