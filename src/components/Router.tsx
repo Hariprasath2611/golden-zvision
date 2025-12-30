@@ -8,6 +8,7 @@ import { StoreCollectionRoute, storeCollectionRouteLoader } from '@/wix-vertical
 import { defaultStoreCollectionRouteRedirectLoader } from '@/wix-verticals/react-pages/react-router/routes/store-redirect';
 import { Cart } from '@/wix-verticals/react-pages/react-router/routes/cart';
 import HomePage from '@/components/pages/HomePage';
+import AboutPage from '@/components/pages/AboutPage';
 import Footer from '@/components/layout/Footer';
 
 // Main Layout component with Footer
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <HomePage />,
+      },
+      {
+        path: '/about',
+        element: <AboutPage />,
       },
       {
         path: '/products/:slug',

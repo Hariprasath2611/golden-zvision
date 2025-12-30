@@ -208,9 +208,9 @@ const HeroSection = () => {
                     {'{ Initialize_Project }'}
                   </Button>
                 </Link>
-                <Link to="/store">
+                <Link to="/about">
                   <Button variant="outline" className="rounded-none px-8 py-6 text-lg font-paragraph border-secondary hover:bg-secondary hover:text-white transition-all duration-300">
-                    Explore Services
+                    About Us
                   </Button>
                 </Link>
               </div>
