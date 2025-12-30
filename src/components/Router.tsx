@@ -8,16 +8,14 @@ import { StoreCollectionRoute, storeCollectionRouteLoader } from '@/wix-vertical
 import { defaultStoreCollectionRouteRedirectLoader } from '@/wix-verticals/react-pages/react-router/routes/store-redirect';
 import { Cart } from '@/wix-verticals/react-pages/react-router/routes/cart';
 import HomePage from '@/components/pages/HomePage';
-import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 
-// Main Layout component with Header and Footer
+// Main Layout component with Footer
 function MainLayout() {
   return (
     <WixServicesProvider>
       <ScrollToTop />
       <div className="min-h-screen flex flex-col">
-        <Header />
         <main className="flex-1">
           <Outlet />
         </main>
