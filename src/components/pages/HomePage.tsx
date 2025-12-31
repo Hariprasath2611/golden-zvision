@@ -170,7 +170,7 @@ const HeroSection = () => {
       {/* Header Content */}
       <header className="relative z-20 w-full max-w-[120rem] mx-auto px-6 py-8 flex justify-between items-center">
         <div className="font-paragraph font-bold text-xl tracking-tighter">
-          goldenZvision<span className="text-primary">_</span>
+          Golden Z vision <span className="text-primary">_</span>
         </div>
         <nav className="hidden md:flex gap-8 text-sm font-paragraph">
           <Link to="/store" className="hover:text-primary transition-colors">Services</Link>
@@ -186,7 +186,7 @@ const HeroSection = () => {
         <div className="w-full max-w-[120rem] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-8">
             <AnimatedElement delay={200}>
-              <h1 className="font-heading text-6xl md:text-8xl lg:text-9xl font-bold leading-[0.9] tracking-tighter text-secondary mb-8">
+              <h1 className="text-6xl md:text-8xl font-bold leading-[0.9] tracking-tighter text-secondary mb-8 lg:text-8xl font-fraunces">
                 Golden Z vision<br />
                 
               </h1>

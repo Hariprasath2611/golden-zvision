@@ -20,7 +20,10 @@ export default {
             },
             fontFamily: {
                 heading: ["helvetica-w01-bold"],
-                paragraph: ["helvetica-w01-roman"]
+                paragraph: ["helvetica-w01-roman"],
+                "noticia-text": ["noticia text", "serif"],
+                montserrat: ["montserrat", "sans-serif"],
+                "eb-garamond": ["eb garamond", "serif"]
             },
             colors: {
                 darkbackground: "#1e254e",
