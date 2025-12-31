@@ -331,7 +331,7 @@ const StatsBanner = () => {
             "Innovation distinguishes between a leader and a follower."
           </h2>
           <p className="font-paragraph text-primary text-lg mb-12">
-            [ SINCE 2020 ]
+            [ SINCE 2023 ]
           </p>
           <Link to="/store">
             <Button className="bg-primary text-white hover:bg-white hover:text-secondary rounded-none px-10 py-6 text-lg font-paragraph transition-all duration-300">
