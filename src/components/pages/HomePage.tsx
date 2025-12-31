@@ -167,6 +167,21 @@ const HeroSection = () => {
           <div className="absolute top-[15%] right-[35%] w-12 h-4 bg-primary/60 animate-pulse transform rotate-0" />
         </div>
       </div>
+      {/* Header Content */}
+      <header className="relative z-20 w-full max-w-[120rem] mx-auto px-6 py-8 flex justify-between items-center">
+        <div className="font-paragraph font-bold text-xl tracking-tighter">
+          Golden Z vision <span className="text-primary">_</span>
+        </div>
+        <nav className="hidden md:flex gap-8 text-sm font-paragraph">
+          <Link to="/store" className="hover:text-primary transition-colors">Services</Link>
+          <Link to="/about" className="hover:text-primary transition-colors">About</Link>
+          <Link to="/contact" className="hover:text-primary transition-colors">Contact</Link>
+        </nav>
+        <Link to="/login" className="text-sm font-paragraph hover:text-primary transition-colors">
+          Log In
+        </Link>
+      </header>
+      {/* Main Hero Content */}
       <div className="relative z-10 flex-grow flex items-center px-6">
         <div className="w-full max-w-[120rem] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-8">
@@ -191,7 +206,7 @@ const HeroSection = () => {
                   </Button>
                 </Link>
                 <Link to="/about">
-                  <Button variant="outline" className="rounded-none px-8 py-6 text-lg font-paragraph border-secondary hover:bg-secondary hover:text-white transition-all duration-300">
+                  <Button variant="outline" className="px-8 py-6 text-lg font-paragraph hover:bg-secondary hover:text-white transition-all duration-300 bg-secondary-foreground rounded-[13px] border-black border border-none">
                     About Us
                   </Button>
                 </Link>
@@ -200,7 +215,8 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className="relative z-5 border-t border-secondary/10 bg-background/80 backdrop-blur-sm py-16 shadow-[inset_0px_0px_4px_0px_#bfbfbf]">
+      {/* Footer Ticker */}
+      <div className="relative z-5 border-t border-secondary/10 bg-background/80 backdrop-blur-sm shadow-[inset_0px_0px_4px_0px_#bfbfbf] py-[43px] px-0">
         <div className="overflow-hidden whitespace-nowrap flex">
           <div className="animate-marquee flex gap-12 items-center font-paragraph text-sm text-secondary">
             {SERVICES.map((s, i) => (
@@ -224,22 +240,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <header className="relative z-20 w-full max-w-[120rem] mx-auto px-6 py-8 flex justify-between items-center">
-        <div className="font-paragraph font-bold text-xl tracking-tighter">
-          Golden Z vision <span className="text-primary">_</span>
-        </div>
-        <nav className="hidden md:flex gap-8 text-sm font-paragraph">
-          <Link to="/store" className="hover:text-primary transition-colors">Services</Link>
-          <Link to="/about" className="hover:text-primary transition-colors">About</Link>
-          <Link to="/contact" className="hover:text-primary transition-colors">Contact</Link>
-        </nav>
-        <Link to="/login" className="text-sm font-paragraph hover:text-primary transition-colors">
-          Log In
-        </Link>
-      </header>
-      {/* Header Content */}
-      {/* Main Hero Content */}
-      {/* Footer Ticker */}
     </section>
   );
 };
