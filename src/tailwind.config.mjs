@@ -23,7 +23,9 @@ export default {
                 paragraph: ["helvetica-w01-roman"],
                 "noticia-text": ["noticia text", "serif"],
                 montserrat: ["montserrat", "sans-serif"],
-                "eb-garamond": ["eb garamond", "serif"]
+                "eb-garamond": ["eb garamond", "serif"],
+                "fraunces_120pt-light": ["fraunces_120pt-light", "serif"],
+                fraunces: ["fraunces", "serif"]
             },
             colors: {
                 darkbackground: "#000000",
