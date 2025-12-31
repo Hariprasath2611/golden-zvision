@@ -169,7 +169,7 @@ const HeroSection = () => {
       </div>
       {/* Header Content */}
       <header className="relative z-20 w-full max-w-[120rem] mx-auto px-6 py-8 flex justify-between items-center">
-        <div className="font-paragraph font-bold text-xl tracking-tighter">
+        <div className="font-paragraph font-bold text-xl tracking-tighter p-0.5">
           Golden Z vision <span className="text-primary">_</span>
         </div>
         <nav className="hidden md:flex gap-8 text-sm font-paragraph">
@@ -202,7 +202,7 @@ const HeroSection = () => {
               <div className="flex flex-wrap gap-4">
                 <Link to="/store">
                   <Button className="bg-secondary text-secondary-foreground hover:bg-primary hover:text-white px-8 py-6 text-lg font-paragraph transition-all duration-300 border-transparent hover:border-primary border border-none rounded-[10px]">
-                    {'{ Initialize_Project }'}
+                    {'Explore Me'}
                   </Button>
                 </Link>
                 <Link to="/about">
@@ -230,11 +230,11 @@ const HeroSection = () => {
             ))}
              {SERVICES.map((s, i) => (
               <React.Fragment key={`dup-${i}`}>
-                <span className="flex items-center gap-2 text-5xl">
+                <span className="flex items-center gap-2 text-60xl">
                   <span className="w-2 h-2 bg-primary rounded-full"></span>
                   {s.title.toUpperCase()}
                 </span>
-                <span className="text-4xl">//</span>
+                <span className="text-50xl">//</span>
               </React.Fragment>
             ))}
           </div>
