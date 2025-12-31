@@ -230,7 +230,7 @@ const HeroSection = () => {
             ))}
              {SERVICES.map((s, i) => (
               <React.Fragment key={`dup-${i}`}>
-                <span className="flex items-center gap-2">
+                <span className="flex items-center gap-2 text-5xl">
                   <span className="w-2 h-2 bg-primary rounded-full"></span>
                   {s.title.toUpperCase()}
                 </span>
