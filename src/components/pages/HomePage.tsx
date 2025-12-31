@@ -173,9 +173,9 @@ const HeroSection = () => {
           Golden Z vision <span className="text-primary">_</span>
         </div>
         <nav className="hidden md:flex gap-8 text-sm font-paragraph">
-          <Link to="/store" className="hover:text-primary transition-colors">Services</Link>
-          <Link to="/about" className="hover:text-primary transition-colors">About</Link>
-          <Link to="/contact" className="hover:text-primary transition-colors">Contact</Link>
+          <Link to="/store" className="hover:text-primary transition-colors text-lg">Services</Link>
+          <Link to="/about" className="hover:text-primary transition-colors text-lg">About</Link>
+          <Link to="/contact" className="hover:text-primary transition-colors text-lg">Contact</Link>
         </nav>
         <Link to="/login" className="text-sm font-paragraph hover:text-primary transition-colors">
           Log In
@@ -201,7 +201,7 @@ const HeroSection = () => {
             <AnimatedElement delay={600}>
               <div className="flex flex-wrap gap-4">
                 <Link to="/store">
-                  <Button className="bg-secondary text-secondary-foreground hover:bg-primary hover:text-white rounded-none px-8 py-6 text-lg font-paragraph transition-all duration-300 border border-transparent hover:border-primary">
+                  <Button className="bg-secondary text-secondary-foreground hover:bg-primary hover:text-white px-8 py-6 text-lg font-paragraph transition-all duration-300 border-transparent hover:border-primary border border-none rounded-[10px]">
                     {'{ Initialize_Project }'}
                   </Button>
                 </Link>
