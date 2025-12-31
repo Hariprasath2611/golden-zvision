@@ -187,7 +187,7 @@ const HeroSection = () => {
           <div className="lg:col-span-8">
             <AnimatedElement delay={200}>
               <h1 className="font-heading text-6xl md:text-8xl lg:text-9xl font-bold leading-[0.9] tracking-tighter text-secondary mb-8">
-                GoldenZvision<br />
+                Golden Z vision<br />
                 
               </h1>
             </AnimatedElement>
