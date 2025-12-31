@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="font-paragraph text-xl font-bold text-secondary-foreground mb-4">
-              {'<'} goldenZvision {' />'}
+              {'<'} GoldenZvision {' />'}
             </div>
             <p className="font-paragraph text-sm text-secondary-foreground/70">
               Professional digital solutions for modern businesses
@@ -88,7 +88,7 @@ export default function Footer() {
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
                 <span className="font-paragraph text-sm text-secondary-foreground/70">
-                  +1 (555) 123-4567
+                  +91-99999999
                 </span>
               </li>
               <li className="flex items-start gap-2">
