@@ -216,7 +216,7 @@ const HeroSection = () => {
         </div>
       </div>
       {/* Footer Ticker */}
-      <div className="relative z-10 border-t border-secondary/10 bg-background/80 backdrop-blur-sm py-16">
+      <div className="relative z-10 border-t border-secondary/10 bg-background/80 backdrop-blur-sm py-8">
         <div className="overflow-hidden whitespace-nowrap flex">
           <div className="animate-marquee flex gap-12 items-center font-paragraph text-sm text-secondary">
             {SERVICES.map((s, i) => (
