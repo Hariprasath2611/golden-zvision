@@ -104,7 +104,7 @@ export const ProductListWrapper: React.FC<ProductListProps> = ({
           {/* Header Controls */}
           <Card className="border-surface-subtle mb-6 bg-surface-card">
             <CardContent className="p-4">
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between bg-secondary-foreground">
                 <div className="flex items-center gap-4">
                   <CategoryPicker categoriesListConfig={categoriesListConfig} />
                 </div>
